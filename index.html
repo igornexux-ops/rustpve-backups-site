@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="RustPVE Backups — частный инструмент зашифрованного резервного копирования сервера RUST PVE [RU] на Google Диск.">
+  <meta name="theme-color" content="#0c1014">
+  <title>RustPVE Backups — Защищённые резервные копии</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="shell">
+  <a class="brand" href="./" aria-label="RustPVE Backups — главная">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5.5-3.5 8.5-8 10-4.5-1.5-8-4.5-8-10V6l8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg></span>
+    RUSTPVE <span style="color:var(--accent2)">BACKUPS</span>
+  </a>
+  <nav class="nav" aria-label="Навигация"><a href="./" aria-current="page">Главная</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav>
+</div></header>
+<main>
+  <section class="hero shell">
+    <div class="eyebrow">Private backup utility · RUST PVE [RU]</div>
+    <h1>Резервные копии.<br>Без лишнего риска.</h1>
+    <p class="intro">RustPVE Backups — частный инструмент для сохранения резервных копий игрового сервера RUST PVE [RU] в Google Drive. Перед передачей архивы шифруются с помощью rclone crypt.</p>
+    <div class="hero-actions"><a class="button" href="privacy.html">Как используются данные</a><a class="button secondary" href="#how-it-works">Как это работает</a></div>
+  </section>
+  <hr class="rule">
+  <section class="section shell" id="how-it-works">
+    <div class="eyebrow">Процесс</div>
+    <h2>Три этапа защиты</h2>
+    <div class="tiles">
+      <article class="tile"><span class="number">01 / LOCAL</span><h3>Создание архива</h3><p>На собственном сервере создаётся резервная копия необходимых игровых данных и настроек.</p></article>
+      <article class="tile"><span class="number">02 / ENCRYPT</span><h3>Шифрование</h3><p>rclone crypt шифрует содержимое и имена файлов перед отправкой в облако.</p></article>
+      <article class="tile"><span class="number">03 / GOOGLE DRIVE</span><h3>Хранение и восстановление</h3><p>Зашифрованные архивы хранятся в Google Drive и могут быть восстановлены владельцем.</p></article>
+    </div>
+  </section>
+  <section class="section shell" style="padding-top:0">
+    <div class="info">
+      <div><span class="pill">Частное приложение</span><h3 style="margin-top:19px">Без публичной регистрации</h3><p>RustPVE Backups предназначен для собственного администрирования игрового сервера. Сайт содержит только описание и правовую информацию; он не предоставляет входа или загрузки файлов.</p></div>
+      <div><span class="pill">Google OAuth</span><h3 style="margin-top:19px">Ограниченный доступ к Drive</h3><p>Для работы используется разрешение <strong style="color:var(--text)">drive.file</strong>: доступ к файлам Google Drive, созданным или открытым через приложение. Разрешение можно отозвать в настройках Google-аккаунта.</p></div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="shell"><div>© 2026 RustPVE Backups · RUST PVE [RU]</div><div class="footer-links"><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a><a href="mailto:igor.nexux@gmail.com">Контакт</a></div></div></footer>
+</body></html>
